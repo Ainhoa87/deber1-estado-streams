@@ -1,42 +1,40 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../estado/contador_provider.dart';
+import '../estado/contador_cubit.dart';
 
-class PantallaControl extends ConsumerWidget {
+class PantallaControl extends StatelessWidget {
   const PantallaControl({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final contador = ref.watch(contadorProvider);
-    final controlador = ref.read(contadorProvider.notifier);
-
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Control')),
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(
-              'Contador: $contador',
-              style: Theme.of(context).textTheme.displayMedium,
+            BlocBuilder<ContadorCubit, int>(
+              builder: (context, contador) => Text(
+                'Contador: $contador',
+                style: Theme.of(context).textTheme.displayMedium,
+              ),
             ),
             const SizedBox(height: 24),
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
                 ElevatedButton(
-                  onPressed: controlador.decrementar,
+                  onPressed: () => context.read<ContadorCubit>().decrementar(),
                   child: const Text('-1'),
                 ),
                 const SizedBox(width: 16),
                 ElevatedButton(
-                  onPressed: controlador.incrementar,
+                  onPressed: () => context.read<ContadorCubit>().incrementar(),
                   child: const Text('+1'),
                 ),
               ],
             ),
-            const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () => Navigator.of(context).pop(),
               child: const Text('Volver'),

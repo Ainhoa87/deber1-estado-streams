@@ -8,6 +8,12 @@
       "languageVersion": "3.4"
     },
     {
+      "name": "bloc",
+      "rootUri": "file:///C:/Users/Eigenaar/AppData/Local/Pub/Cache/hosted/pub.dev/bloc-9.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "boolean_selector",
       "rootUri": "file:///C:/Users/Eigenaar/AppData/Local/Pub/Cache/hosted/pub.dev/boolean_selector-2.1.2",
       "packageUri": "lib/",
@@ -68,6 +74,12 @@
       "languageVersion": "3.11"
     },
     {
+      "name": "flutter_bloc",
+      "rootUri": "file:///C:/Users/Eigenaar/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_bloc-9.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "flutter_riverpod",
       "rootUri": "file:///C:/Users/Eigenaar/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_riverpod-3.4.3",
       "packageUri": "lib/",
@@ -123,9 +135,15 @@
     },
     {
       "name": "meta",
-      "rootUri": "file:///C:/Users/Eigenaar/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.19.0",
+      "rootUri": "file:///C:/Users/Eigenaar/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.18.3",
       "packageUri": "lib/",
       "languageVersion": "3.5"
+    },
+    {
+      "name": "nested",
+      "rootUri": "file:///C:/Users/Eigenaar/AppData/Local/Pub/Cache/hosted/pub.dev/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "path",
@@ -162,6 +180,12 @@
       "rootUri": "file:///C:/Users/Eigenaar/AppData/Local/Pub/Cache/hosted/pub.dev/plugin_platform_interface-2.1.8",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "provider",
+      "rootUri": "file:///C:/Users/Eigenaar/AppData/Local/Pub/Cache/hosted/pub.dev/provider-6.1.5+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "riverpod",
@@ -273,7 +297,7 @@
     },
     {
       "name": "vector_math",
-      "rootUri": "file:///C:/Users/Eigenaar/AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.4.3",
+      "rootUri": "file:///C:/Users/Eigenaar/AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.4.0",
       "packageUri": "lib/",
       "languageVersion": "3.10"
     },
